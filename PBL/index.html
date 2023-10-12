@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tesla Stock Analysis</title>
     <!-- Import the Public Sans font from Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;700&amp;display=swap" rel="stylesheet">
     <style>
         /* Apply Inter font to the entire page */
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'IBM Plex Sans', sans-serif;
         }
 
         h1{
@@ -54,7 +54,7 @@
                 <img src="graph.png" alt="Stock Graph" class="stock-graph">
             </div>
             <p class="mt-3 text-gray-600">Snapshots: 653</p>
-            <p class="mt-3 text-gray-600">Prediction Accuracy: 75%</p>
+            <p class="mt-3 text-gray-600">Prediction Accuracy: 83%</p>
         </div>
         
         <!-- Stock Details -->
@@ -95,6 +95,27 @@
             <div class="bg-white p-4 rounded-lg shadow-lg transition duration-300 transform hover:scale-105 metric-card">
                 <h2 class="text-lg font-semibold">Dividend Yield</h2>
                 <p class="text-2xl text-blue-700">1.5%</p>
+            </div>
+
+            <!-- Additional metric cards -->
+            <div class="bg-white p-4 rounded-lg shadow-lg transition duration-300 transform hover:scale-105 metric-card">
+                <h2 class="text-lg font-semibold">Revenue</h2>
+                <p class="text-2xl text-blue-700">$10.5B</p>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow-lg transition duration-300 transform hover:scale-105 metric-card">
+                <h2 class="text-lg font-semibold">EPS (Earnings per Share)</h2>
+                <p class="text-2xl text-blue-700">$5.32</p>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow-lg transition duration-300 transform hover:scale-105 metric-card">
+                <h2 class="text-lg font-semibold">High Price (52-Week)</h2>
+                <p class="text-2xl text-blue-700">$900.45</p>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow-lg transition duration-300 transform hover:scale-105 metric-card">
+                <h2 class="text-lg font-semibold">Low Price (52-Week)</h2>
+                <p class="text-2xl text-blue-700">$650.25</p>
             </div>
 
             <!-- Add more metric cards here -->
