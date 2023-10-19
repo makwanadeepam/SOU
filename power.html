@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BECOME POWERFUL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1d1f27;
+            color: #fff;
+            font-size: 17px;
+        }
+        .container {
+            max-width: 1000px; /* Increased container width */
+            margin: 0 auto;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+            text-align: justify;
+        }
+        .btn {
+            background-color: #3f51b5;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #303f9f;
+        }
+        .video-container {
+            display: none;
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        p {
+            margin-top: 20px;
+            color: #ccc;
+        }
+        .quote {
+            font-style: italic;
+            margin-top: 20px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a style="text-align: center;">
+            <h1 class="text-3xl font-bold mb-4">BECOME POWERFUL</h1>
+            <p class="text-lg">Click the button below to become powerful:</p>
+            <div><button id="getRandomVideo" class="btn mt-4">GENERATE POWER</button></div>
+        </a>
+        <div class="video-container mt-4" id="videoContainer"></div>
+
+        <p class="text-lg mt-6">Discipline is the real deal when it comes to achieving your goals. While motivation can provide a temporary burst of energy, it is often short-lived. Discipline, on the other hand, is the consistent effort and commitment to your goals even when motivation wanes.</p>
+
+        <p class="text-lg">Remember, the path to success is not always lined with motivation. It's the daily discipline and habits that lead to lasting results.</p>
+
+        <p class="text-lg mt-6">Money and knowledge are sources of power. Money can provide the means to achieve your goals and live a comfortable life. Knowledge empowers you to make informed decisions and opens doors to opportunities. Use them wisely to enhance your journey towards success.</p>
+
+        <p class="quote text-lg mt-6">"Discipline is the bridge between goals and accomplishment." - Jim Rohn</p>
+    </div>
+
+    <script>
+        // Array of URLs
+        const urls = [
+            'https://www.youtube.com/embed/z4RcXoN1eCk',
+            'https://www.youtube.com/embed/R_fot3dtii0',
+            'https://www.youtube.com/embed/9Yf2HZ8ym7M',
+            // Add more URLs here
+        ];
+
+        document.getElementById('getRandomVideo').addEventListener('click', function() {
+            // Get a random URL from the array
+            const randomIndex = Math.floor(Math.random() * urls.length);
+            const randomURL = urls[randomIndex];
+
+            // Display the video container and set the iframe
+            document.getElementById('videoContainer').style.display = 'block';
+            document.getElementById('videoContainer').innerHTML = '<iframe src="' + randomURL + '" allowfullscreen></iframe';
+        });
+    </script>
+</body>
+</html>
